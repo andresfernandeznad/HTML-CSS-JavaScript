@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title></title>
+	<link rel="stylesheet" href="">
+
+	<script type="text/javascript" charset="utf-8">
+		var letrasPrincipio = ['T', 'R', 'W', 'A', 'G', 'M', 'Y', 'F', 'P', 'D', 'X', 'B', 'N',
+		'J', 'Z', 'S', 'Q', 'V', 'H', 'L', 'C', 'K', 'E', 'T'];
+
+		var dni = prompt("Introduce tu DNI completo: ");
+		var ultimoCaracter = dni.charAt(dni.length - 1);//Saca el ultimo valor del DNI, el número.
+		if (false == isNaN(ultimoCaracter)) {
+			alert("Su último carácter no es una letra.");
+		} else if (true == isNaN(ultimoCaracter)) {                          //Comprueba si el valor de ultimocaracter es un valor numerico o una letra,
+			var numeros = dni.substring(0, dni.length - 1);				//Saca del dni todos los números que tiene el dni
+			var letrasNumero = parseInt(numeros);						//Pasa a int los numeros sacados del DNI
+			var letraFinal = letrasPrincipio[letrasNumero % 23];
+			if (letraFinal == ultimoCaracter) {
+				alert("Su letra final introducida es correcta y es: " + letraFinal);
+			} else {
+				alert("Su letra final es incorrecta y debería ser: " + letraFinal);
+			}
+			
+		}
+		
+
+
+	</script>
+</head>
+<body>
+	
+</body>
+</html>

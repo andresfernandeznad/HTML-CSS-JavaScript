@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title></title>
+	<link rel="stylesheet" href="">
+	<style type="text/css" media="screen">
+		
+	.normal {
+		width: 250px;
+		
+		empty-cells: hide;
+		border-collapse: collapse;
+
+		}
+		.normal th, .normal td {
+		border: 1px solid #000;
+		
+		}
+
+		.superior {
+			background-color: #D7ABA1;
+			
+			padding-bottom: 5px;
+			padding-top: 5px;
+			padding-right: 5px;
+		}
+		.izquierda {
+			
+			
+			padding-left: 20px;
+			padding-bottom: 5px;
+			padding-top: 5px;
+			padding-right: 5px;
+
+		}
+
+		#iz1 {
+			background:#A1D7D6 url(imagenes/favicon1.ico) no-repeat left;
+		}
+		#iz2 {
+			background:#A1D7D6 url(imagenes/favicon2.ico) no-repeat left;
+		}
+		#iz3 {
+			background:#A1D7D6 url(imagenes/favicon3.ico) no-repeat left;
+		}
+		#iz4 {
+			background:#A1D7D6 url(imagenes/favicon.ico) no-repeat left;
+		}
+		.numeros2 td {
+			background-color: yellow;
+		}
+		.numeros2 td:hover {
+			background-color: red;
+		}
+		.numeros1 td {
+			background-color: #E1EC6F;
+		}
+	</style>
+</head>
+<body>
+	
+	<table class="normal" summary="Tabla genérica">
+		<tr class="superior">
+			<th scope="col">Cambio</th>
+			<th scope="col">Compra</th>
+			<th scope="col">Venta</th>
+			<th scope="col">Máximo</th>
+			<th scope="col">Mínimo</th>
+		</tr>
+		<tr class="numeros1">
+			<th scope="col" class="izquierda" id="iz1">Euro/Dolar</th>
+			<td scope="col">1.2524</td>
+			<td scope="col">1.2524</td>
+			<td scope="col">1.2524</td>
+			<td scope="col">1.2524</td>
+		</tr>
+		<tr>
+			<th scope="col"  class="izquierda" id="iz2">Dolar/Yen</th>
+			<td scope="col">1.2524</td>
+			<td scope="col">1.2524</td>
+			<td scope="col">1.2524</td>
+			<td scope="col">1.2524</td>
+		</tr>
+		<tr class="numeros1">
+			<th scope="col"  class="izquierda" id="iz3">Libra/Dolar</th>
+			<td scope="col" >1.2524</td>
+			<td scope="col">1.2524</td>
+			<td scope="col">1.2524</td>
+			<td scope="col">1.2524</td>
+		</tr>
+		<tr class="numeros2">
+			<th scope="col" class="izquierda" id="iz4">Yen/Euro</th>
+			<td scope="col">1.2524</td>
+			<td scope="col">1.2524</td>
+			<td scope="col">1.2524</td>
+			<td scope="col">1.2524</td>
+		</tr>
+
+	</table>
+</body>
+</html>

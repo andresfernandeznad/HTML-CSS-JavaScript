@@ -1,0 +1,26 @@
+p {
+	padding: 10px;
+	width: 800px;
+	height: 400px;
+	color: blue;
+	background-color: yellow;
+	background-image: url("C:/Users/Andresillo/Desktop/IMAGENES y VIDEOS/402897.jpg");
+	background-size: cover; 
+	background-repeat: no-repeat;
+	border-top-style: dashed;
+	border-top-color: red;
+	border-top-width: 10px;
+	border-right-style: double;
+	border-right-color: blue;
+	border-right-width: 10px;
+	border-bottom-color: green;
+	border-bottom-width: 10px;
+	border-bottom-style: dotted; 
+	border-left-style: inset;
+	border-left-color: black;
+
+
+
+	overflow: hidden;
+
+}

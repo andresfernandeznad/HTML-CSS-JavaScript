@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title></title>
+	<link rel="stylesheet" href="">
+	<script  type="text/javascript" charset="utf-8">
+		
+		var dias = ["Lunes", "Martes", "Miércoles", "Jueves", "Viernes", "Sábado", "Domingo"];
+		for(i in dias) {
+			console.log(dias[i]);
+		}
+		var prueba = "Hola mundo";
+
+		console.log(prueba.length);
+		var prueba2 = "Hola Juan";
+		var resultado = prueba + " " + prueba2;
+		alert(resultado);
+		alert(prueba2.charAt(2) +  " " + prueba2.indexOf("J"));
+		console.log(prueba.substring(5));
+		console.log(prueba.substring(5,9));
+		resultado = resultado.split(" ");
+		for(i in resultado) {
+			console.log(resultado[i]);
+		}
+		var palabra = "Hola";
+		palabra = palabra.split("");
+		for(i in palabra) {
+			console.log(palabra[i]);
+		}
+
+		//parseFloat(); recoger un dato y lo pasa a float supongo xD
+		//parseInt(); recoge un dato y lo transforma a entero
+
+		var valor = "23";
+		valor = parseInt(valor);
+		resultado2 = valor + 12;
+		console.log(resultado2); //Se concatenan porque uno es un array por eso usamos parseInt() para pasarlo a entero
+
+		dias = dias.concat("Otro dia 1" , "Otro día 2");
+		console.log(dias);
+
+		dias = dias.join(" "); //Join convierte en cadena y split convierte en array
+		console.log(dias);
+		dias = dias.split(" ");
+		console.log(dias);
+		console.log(dias.pop()); //Quita el último valor
+		dias.push("Esto es un push");//Añade un valor más al array y una posición nueva
+		console.log(dias);
+	</script>
+</head>
+<body>
+	
+</body>
+</html>

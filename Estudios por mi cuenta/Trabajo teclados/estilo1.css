@@ -1,0 +1,47 @@
+#cabecera {
+	
+	font-family: calibri;
+	font-size: 6em;
+	
+	text-align: center;
+}
+#cabeceraspan {
+	border: black solid 3px;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	padding-left: 5px;
+	padding-right: 5px;
+}
+body {
+	background-color: #7B241C;
+}
+img {
+	margin: auto;
+	display: block;
+	width: 40%;
+	height: auto;
+	border-radius: 15px;
+}
+#introduccion {
+	font-size: 3em;
+	font-family: calibri;
+	padding-left: 50px;
+}
+table {
+	
+	font-size: 1.5em;
+	font-family: calibri;
+	margin: auto;
+	margin-bottom: 40px;
+}
+a {
+	color: black;
+	text-decoration: none;
+	padding: 5px;
+}
+a:visited {
+	color:#212121 ;
+}
+a:hover {
+	color: black;
+}

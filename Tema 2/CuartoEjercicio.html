@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title></title>
+	<link rel="stylesheet" href="">
+
+	<script type="text/javascript" charset="utf-8">
+		var letras = ['T', 'R', 'W', 'A', 'G', 'M', 'Y', 'F', 'P', 'D', 'X', 'B', 'N',
+		'J', 'Z', 'S', 'Q', 'V', 'H', 'L', 'C', 'K', 'E', 'T'];
+
+		var dni = prompt("Introduce tu DNI completo: ");
+		
+		var letraDada =  dni.split("");
+		var letraFinal = letraDada[9];
+		if ((dni > 99999999)||(dni < 0)) {
+			alert("Su número no es válido.")
+		} else {
+		var letra = letras[dni % 23];
+		console.log(letra);
+		}
+		if (letra == letraFinal) {
+			alert("Sus datos son correctos.")
+		} else {
+			alert("La letra dada es incorrecta.")
+		}
+
+		for (var i = 0; i < 5; i++) {
+			console.log(i);
+		}
+	</script>
+</head>
+<body>
+	
+</body>
+</html>

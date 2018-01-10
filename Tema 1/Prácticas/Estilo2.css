@@ -1,0 +1,25 @@
+h1, h2, div {
+	color: red;
+}
+
+div h1 {
+	color: blue;
+}
+
+.primerh1 {
+	color: grey;
+}
+
+.segundoh1 {
+	color: green;
+}
+
+.enlace {
+	font-size: 60px ;
+}
+
+#destacado {
+	color: cyan;
+	font-size: 3em;
+	background-color: black;
+}

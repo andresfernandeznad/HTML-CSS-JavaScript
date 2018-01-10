@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title></title>
+	<link rel="stylesheet" href="">
+	<style type="text/css" media="screen">
+
+	input {
+		display: block;
+	}
+	fieldset {
+		width: 48%;
+	}
+	input:focus {
+		border-color: blue;
+	}
+	input[type="submit"] {
+		border-color: red;
+	}
+
+		
+	</style>
+	
+</head>
+<body>
+	
+	<form action="datos.php" method="get" accept-charset="utf-8">
+		<fieldset>
+			<legend>TUTORIAL</legend>
+		
+		<label for="nombre">Ingrese su nombre</label>
+		<input type="text" placeholder="Escribe tu nombre" name="nombre" id="nombre">
+		<input type="password" name="" value="" placeholder=""><br>
+		<input type="radio" name="sexo" value="">Hombre
+		<input type="radio" name="sexo" value="">Mujer
+		<input type="radio" name="sexo" value="">Otro
+		<input type="button" name="" value="Enviar">
+		<input type="submit" name="" value="Enviar consulta">
+		<select name="" >
+			<option value="Mexico">Mexico</option>
+			<option value="España">España</option>
+			<option value="Colombia">Colombia</option>
+		</select>
+		<input type="color" name="" value="" placeholder="">
+		</fieldset>
+	</form>
+
+</body>
+</html>

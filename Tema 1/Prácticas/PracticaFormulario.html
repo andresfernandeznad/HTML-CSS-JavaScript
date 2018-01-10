@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+
+
+	<link rel="stylesheet" type="text/css" href="">
+	<style type="text/css" media="screen">
+		fieldset {
+			display: inline-block;
+			width: 300px;
+		}
+	</style>
+</head>
+<body>
+
+	<h1>Mi primer formulario</h1>
+
+	<form action="" method="get" accept-charset="utf-8">
+		
+		<fieldset>
+			<legend>Nombre y contraseña</legend>
+			<label for="nombre">Nombre</label>
+			<input type="text" id="nombre" name="nombre" >
+			<br>
+			<label for="password">Password</label>
+			<input type="password" id="password" maxlength="5" name="passwd">
+		</fieldset>
+			
+		<br>
+		<p>Selecciona las opciones:</p>
+		<input type="checkbox" name="opcion1" value="uno"> Opcion1
+		<br>
+		<input type="checkbox" name="opcion2" value="dos"> Opcion2
+		<br>
+		<input type="checkbox" checked name="opcion3" value="tres"> Opcioon3
+		<p>Sexo: </p>
+		<input type="radio" name="sexo" value="hombre" checked=""> Hombre
+		<br>
+		<input type="radio" name="sexo" value="mujer"> Mujer
+		<br>
+		<input type="file" name="adjunto"> 
+		<br>
+		<label for="consulta">Consulta</label>
+		<textarea name="consulta" id="consulta" rows="8" cols="40"></textarea>
+		<br> <label for="lista">Lista</label> <br>
+		<select name="lista" id="lista" size="4" multiple="">
+			<option value="">-Selecciona-</option>}
+			
+			<option value="Windows">Windows</option>
+			<option value="Linux">Linux</option>}
+			<option value="otro">Otro</option>}
+			
+			
+		</select>
+		<input type="button" name="guardar" value="Guardar cambioss">
+		<br>
+		<input type="submit" value="Enviarrr">
+		<br>
+		<input type="reset" name="borrar" value="Borra datos del formulario">
+
+	</form>
+
+</body>
+</html>

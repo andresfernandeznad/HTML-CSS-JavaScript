@@ -1,0 +1,45 @@
+h1 {
+	color: rgba(53, 131, 44, 0.6);
+}
+h2 {
+	color: #54A24B;
+}
+div {
+	width: 45%;
+	background: orange;
+	padding: 20px;
+	border: solid 2px black;
+	display: inline-block;
+
+}
+body{
+	background: url(descarga.jpg) no-repeat;
+	background-attachment: fixed;
+}
+
+
+p {
+	background-color: blue;
+	width: 50px;
+	height: 50px;
+	font-size: 20px;
+	color: white;
+}
+
+.caja-padre {
+	position: relative;
+	margin-top: 10px;
+}
+
+.caja {
+	position:absolute;
+	top:100px;
+	bottom: ;
+	right: ;
+	left:50px;
+	opacity: 0.5;
+}
+
+.caja3 {
+	float: right;
+}
