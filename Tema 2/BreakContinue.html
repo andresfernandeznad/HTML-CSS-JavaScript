@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title></title>
+	<link rel="stylesheet" href="">
+	<script type="text/javascript" charset="utf-8">
+		
+		var cadena = "En un lugar de la Mancha de cuyo nombre no quiero acordarme...";
+		var letras = cadena.split("");
+		var resultado = "";
+		for(i in letras) {
+			if(letras[i] == 'a') {
+				break;
+			}
+			else {
+				resultado += letras[i];
+			}
+		}
+		alert(resultado);
+
+			cadena = "En un lugar de la Mancha de cuyo nombre no quiero acordarme...";
+			letras = cadena.split("");
+			resultado = "";
+			for(i in letras) {
+				if(letras[i] == 'a') {
+				continue;
+				}
+				else {
+					resultado += letras[i];
+				}
+			}
+			alert(resultado);
+
+	</script>
+</head>
+<body>
+	
+</body>
+</html>

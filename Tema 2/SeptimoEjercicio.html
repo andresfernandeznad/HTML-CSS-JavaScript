@@ -17,6 +17,7 @@
 		} else if (true == isNaN(ultimoCaracter)) {                          //Comprueba si el valor de ultimocaracter es un valor numerico o una letra,
 			var numeros = dni.substring(0, dni.length - 1);				//Saca del dni todos los números que tiene el dni
 			var letrasNumero = parseInt(numeros);						//Pasa a int los numeros sacados del DNI
+			ultimoCaracter = ultimoCaracter.toUpperCase();
 			var letraFinal = letrasPrincipio[letrasNumero % 23];
 			if (letraFinal == ultimoCaracter) {
 				alert("Su letra final introducida es correcta y es: " + letraFinal);

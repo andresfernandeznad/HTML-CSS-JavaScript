@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title></title>
+	<link rel="stylesheet" href="">
+	<script type="text/javascript" charset="utf-8">
+		//Hacer un programa en el que tengo dos equipos y hacer 300 veces los resultados que puede tener de forma random.
+		//1x2 Equi1 y Equi2
+		
+		var contadorEquipA = 0;
+		var contadorEquipB = 0;
+		var contadorEmpate = 0;
+		var x = Math.random()*3;
+		x = parseInt(x);
+
+		
+		
+		for (var i = 0; i < 300; i++) {
+			x = Math.random()*3;
+			x = parseInt(x);
+			switch (x) {
+				case 0:
+					++contadorEquipA;
+				break;
+				case 1:
+					++contadorEmpate;
+				break;
+				case 2:
+					++contadorEquipB;
+				break;				
+			}
+		}
+		if (contadorEquipA > contadorEmpate && contadorEquipA > contadorEquipB) {
+			alert("El equipo ganador es el A");
+		}
+
+		if (contadorEquipB > contadorEmpate && contadorEquipB > contadorEquipA) {
+			alert("El equipo ganador es el B");
+		}
+
+		if (contadorEquipA < contadorEmpate && contadorEmpate > contadorEquipB) {
+			alert("Empate");
+		}
+	</script>
+</head>
+<body>
+	
+</body>
+</html>

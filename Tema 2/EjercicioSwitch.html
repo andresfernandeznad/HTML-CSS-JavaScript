@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title></title>
+	<link rel="stylesheet" href="">
+	<script type="text/javascript" charset="utf-8">
+		
+		var nombre = prompt("Introduce el nombre del alumno: ");
+		var edad = prompt("Introduce la edad del alumno: ");
+		edad = parseInt(edad);										//Cuando cojemos datos de un prompt se cogen como un String, hay que pasarlos a int
+		switch(edad) {
+			case 10 :
+				console.log("Se matriculará en 6º Primaria.");
+				break;
+			case 11 :
+				console.log("Se matriculará en 1º ESO.");
+				break;
+			case 12 :
+				console.log("Se matriculará en 2º ESO.");
+				break;
+			case 13 :
+				console.log("Se matriculará en 3º ESO.");
+				break;
+			case 14 :
+				console.log("Se matriculará en 4º ESO.");
+				break;
+			case 15 :
+				console.log("Se matriculará en 1º Bach.");
+				break;
+			case 16 :
+				console.log("Se matriculará en 2º Bach.");
+				break;
+			default:
+				console.log("No podemos matricularlo con esa edad.");
+				break;
+		}
+	</script>
+</head>
+<body>
+	
+</body>
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title></title>
+	<link rel="stylesheet" href="">
+
+	<script type="text/javascript" charset="utf-8">
+		
+		function palindromo(a) {
+			var palabra = a.split(" "); //Hola mundo pasa a ser ["Hola", "mundo"]
+			palabra = palabra.join("");	//Ahora pasa a ser "Holamundo"
+			console.log(palabra);
+			palabraFin = palabra;		
+			palabra = palabra.split("");//Aqui se vuelve a separar pero ahora letra a letra para darle la vuelta ["H", "o", "l",...]
+			
+			var rever = (palabra.reverse()).join(""); //Aqui a la variable rever se mete el array al reves y luego se une con join para poder comparar con 														palabraFin
+			
+			if (palabraFin == rever) {
+				return "Su palabra es palindromo";
+			} else {
+				return "Su palabra no es palindromo";
+			}
+		}
+
+		var palabra = prompt("Nueva palabra: ");
+		palindromo(palabra);
+		console.log(palindromo(palabra));
+	</script>
+</head>
+<body>
+	
+</body>
+</html>
