@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title></title>
+	<link rel="stylesheet" href="">
+	
+</head>
+<body>
+	<p>Párrafo uno</p>
+	<p id="dos" style="line-height:1.5em;">Párrafo dos</p>
+	<p id="destacado">Párrafo tres</p>
+	<p>Párrafo cuatro</p>
+	<img id="imagen" style="margin:0; border:0;" src="logo.png" />
+</body>
+	<script type="text/javascript" charset="utf-8">
+
+		// Crear nodo de tipo Element
+		var parr = document.createElement("p");
+		// Crear nodo de tipo Text
+		var text = document.createTextNode("Prueba de nuevo nodo");
+		// Añadir el nodo Text como hijo del nodo Element
+		parr.appendChild(text); //Añade el contenido de text al elemento creaod en la variable parr llamado p
+		// Añadir el nodo Element como hijo de la pagina
+		document.body.appendChild(parr);
+		
+		var parrafos = document.getElementsByTagName('p'); //Coge toods los elementos que son párrafos y da un array que son todos los p que hay
+
+		for (i in parrafos) {								//Al poner la p como la letra del elemento coge todas las etiquetas que sean p (solo párrafos)
+			console.log(parrafos[i]);
+		}
+		var destacado = document.getElementById("destacado");	//Igual pero ahoar coge todos los elementos con id destacado
+		console.log(destacado.id); //Para acceder a un atributo directamente
+
+		//destacado.parentNode.removeChild(destacado);	//Borra el nodo destacado
+
+																//En la página de w3schools hay mas getelement
+
+		//Creacion y eliminacion de nodos
+
+		var imagen = document.getElementById("imagen");
+		alert(imagen.style.margin); //Para ver que estilo tiene la imagen
+
+		var parraf = document.getElementById('dos');
+		alert(parraf.style.lineHeight);	//Acceder al estilo
+	</script>
+
+</html>

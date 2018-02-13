@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title></title>
+	<link rel="stylesheet" href="">
+	<style type="text/css" media="screen">
+		#prueba {
+			width: 100px;
+			height: 100px;
+			position: absolute;
+			background-color: red;
+			top: 10px;
+			left: 10px;
+		}
+	</style>
+</head>
+<body>
+	<div id="prueba" style = "top: 100px; left: 100px; ">
+		
+	</div>
+</body>
+
+<script type="text/javascript" charset="utf-8">
+	
+	//Cada vez que se carga la página se ejecuta el main, y al ejecutarse el main se ejecuta la funcion mover
+
+	function mover (miEvento) {
+		var evento = miEvento;
+		var auxLeft = parseInt(document.getElementById('prueba').style.left, 10);
+		var auxTop = parseInt(document.getElementById('prueba').style.top, 10);
+
+		/**if (evento.keyCode == 39) {	
+			document.getElementById('prueba').style.left = auxLeft + 2 + 'px';
+		} else if (evento.keyCode == 38) {
+			document.getElementById('prueba').style.top = auxTop - 2 + 'px';
+		} else if (evento.keyCode == 40) 
+			document.getElementById('prueba').style.top =auxTop + 2 + 'px';
+		} else if (evento.keyCode == 37) {
+			document.getElementById('prueba').style.left = auxLeft - 2 + 'px';
+		}
+		*/
+
+		switch (evento.keyCode) {
+			case 38:
+			document.getElementById('prueba').style.top = auxTop - 2 + 'px';
+			break;
+			case 37:
+			document.getElementById('prueba').style.top = auxLeft - 2 + 'px';
+			break;
+			case 39:
+			document.getElementById('prueba').style.top = auxLeft + 2 + 'px';
+			break;
+			case 40:
+			document.getElementById('prueba').style.top = auxTop + 2 + 'px';
+			break;
+			default:
+			break;
+		}
+	}
+
+
+	//Funcionamiento del main: En todo el documento cuando se pulsa una tecla se ejecuta la función mover
+
+	function main() {
+		// Asignar una función externa a un evento de un elemento
+		document.onkeydown = mover;	//Aquí se le asigna a (evento) la tecla que has pulsado para abajo
+	}
+
+	window.onload = main;
+</script>
+</html>

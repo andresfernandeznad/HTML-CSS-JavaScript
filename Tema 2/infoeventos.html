@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title></title>
+	<link rel="stylesheet" href="">
+</head>
+<body>
+	
+
+<div id="seccion" style="width:150px; height:60px; border:thin solid silver">
+Sección de contenidos...
+</div>
+
+</body>
+<script type="text/javascript" charset="utf-8">
+	function resalta(elEvento) {
+	var evento = elEvento;
+	switch(evento.type) {
+		case 'mouseover':
+			this.style.borderColor = 'black';
+		break;
+		case 'mouseout':
+			this.style.borderColor = 'silver';
+		break;
+	}
+	console.log(evento.type);
+}
+
+	function main() {
+		document.getElementById("seccion").onmouseover = resalta; //Coge al div seccion cuando se pone el ratón encima y ejecuta la función resalta
+		document.getElementById("seccion").onmouseout = resalta;
+	}
+
+	window.onload = main;
+</script>
+</html>

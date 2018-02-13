@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title></title>
+	<link rel="stylesheet" href="">
+	
+	<style type="text/css" media="screen">
+		
+		#capa, #capa2{
+			width: 200px;
+			height: 200px;
+			border: 3px, solid, #678;
+			background-color: red;
+		}
+	</style>
+</head>
+<body>
+
+	<div id="capa">	
+
+		Haz click aquí
+		
+	</div>
+	<div id="capa2">	
+
+		Haz click aquí
+		
+	</div>
+	<script type="text/javascript" charset="utf-8">
+		
+		function prueba() {
+			alert("Hola");
+			this.style.backgroundColor = "blue";	//This lo que hace es que coge lo que lo ejecuta en este caso es el div "capa"
+		}
+
+		document.getElementById('capa').onclick = prueba;	//Llama al elemento por el id y cuando se hace el evento se ejecuta la función.
+		document.getElementById('capa2').onclick = prueba;
+	</script>
+</body>
+</html>

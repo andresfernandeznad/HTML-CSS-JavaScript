@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title></title>
+	<link rel="stylesheet" href="">
+	<style type="text/css" media="screen">
+		div {
+			width: 200px;
+			height: 200px;
+			background-color: grey;
+			border: 5px solid black;
+			position: absolute;
+			z-index: 1;
+		}
+
+		#acierto, #fallo {
+			
+			width: 60%;
+			height: 500px;
+			background-color: green;
+			border: 5px solid black;
+			margin-left: 200px;
+			margin-top: 50px;
+			opacity: 0;
+			position: absolute;
+			z-index: 0;
+		}
+
+		.mensaje {
+			display: block;
+			position: relative;
+			text-align: center;
+			margin-top: 25%;
+			font-size: 2em;
+		}
+	</style>
+	
+</head>
+<body>
+	<div id="falso">
+		PINCHA AQUÍ
+	</div>
+
+	<div id="verdad1">
+		PINCHA AQUÍ
+
+	</div>
+
+	<div id="verdad2">
+		PINCHA AQUÍ
+	</div>
+
+	<div id="acierto"><span class="mensaje">ENHORABUENA</span></div>
+	<div id="fallo"><span class="mensaje">LO SIENTO</span></div>
+	<script type="text/javascript" charset="utf-8" >
+		function mover() {
+			var elem = document.getElementById('falso');
+			elem.style.top = ((Math.random()*50) + 1) + '%';
+			elem.style.left = ((Math.random()*85) + 1) + '%';
+			var elem1 = document.getElementById('verdad1');
+			elem1.style.top = ((Math.random()*50) + 1) + '%';
+			elem1.style.left = ((Math.random()*85) + 1) + '%';
+			var elem2 = document.getElementById('verdad2');
+			elem2.style.top = ((Math.random()*50) + 1) + '%';
+			elem2.style.left = ((Math.random()*85) + 1) + '%';
+
+			
+		}
+		
+		function resultadoBueno() {
+			document.getElementById('acierto').style.opacity = 1;
+			document.getElementById('acierto').style.zIndex = 2;
+		}
+		function resultadoMalo() {
+			document.getElementById('fallo').style.opacity = 1;
+			document.getElementById('fallo').style.zIndex = 2;
+
+		}
+
+		window.onload = mover;		//Llama a la función mover cada vez que se carga la página
+		document.getElementById('falso').onclick = resultadoMalo;
+		document.getElementById('verdad1').onclick = resultadoBueno;
+		document.getElementById('verdad2').onclick = resultadoBueno;
+
+//Otra forma de hacerlo
+//document.getElementById(capa).style.left = x + "%";
+
+	</script>
+</body>
+
+</html>
